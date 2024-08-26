@@ -1,0 +1,330 @@
+/* General Body Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 260px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  max-width: 220px;
+  margin: 30px auto;
+  display: block;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list .nav-link {
+  display: block;
+  padding: 12px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list .nav-link:hover,
+.nav-list .nav-link.active {
+  background-color: #34495e;
+  color: #3498db;
+  border-left: 5px solid #3498db;
+}
+
+/* Main Content Styles */
+.content {
+  margin-left: 260px;
+  padding: 30px;
+  flex: 1;
+  background-color: #fff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* General Body Styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Main Content Styles */
+  main.content {
+    margin-left: 260px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  /* Banner Slider Styles */
+  .banner-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    height: 500px; /* Adjust as needed */
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .slide-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 70%;
+  }
+  
+  .slide-text h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+  }
+  
+  .slide-text p {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #95a5a6;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #3498db;
+  }
+  
+  /* Section Headings */
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Room and Dining Cards */
+  .room-card, .restaurant-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .room-card img, .restaurant-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .room-info, .restaurant-info {
+    padding: 10px;
+  }
+  
+  .room-info h3, .restaurant-info h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .room-info p, .restaurant-info p {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  /* Amenities and Offers Cards */
+  .amenity-card, .offer-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .amenity-card i {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #3498db;
+  }
+  
+  .offer-card h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+  }
+  
+  .offer-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  /* Gallery Styles */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact Form Styles */
+  form {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .btn-primary {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+  }
+  
+  /* About Section Styles */
+  .about-section {
+    margin-top: 30px;
+  }
+  
+  .about-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .sidebar {
+      width: 100%;
+      position: relative;
+      height: auto;
+      box-shadow: none;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slide-text h2 {
+      font-size: 28px;
+    }
+  
+    .slide-text p {
+      font-size: 18px;
+    }
+  }
+  
