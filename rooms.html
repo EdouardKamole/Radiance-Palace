@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms & Suites | Luxury Hotel</title>
+    <link rel="stylesheet" href="rooms.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="container text-center text-light">
+        <h1>Our Rooms & Suites</h1>
+        <p>Experience the ultimate comfort and luxury</p>
+        <a href="#booking" class="btn btn-primary">Book Now</a>
+      </div>
+    </header>
+
+    <!-- Rooms Grid -->
+    <section class="rooms-grid container mt-5">
+      <div class="row">
+        <!-- Room Card -->
+        <div class="col-md-4 mb-4">
+          <div class="room-card">
+            <img
+              src="images/standard-room.jpg"
+              alt="Standard Room"
+              class="img-fluid"
+            />
+            <h3>Standard Room</h3>
+            <p>From $150/night</p>
+            <p>Spacious room with a stunning view of the city skyline.</p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </div>
+        <!-- More Room Cards -->
+      </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers text-center mt-5">
+      <div class="banner">
+        <h2>Stay 3 Nights, Get 1 Free</h2>
+        <p>Book your stay today and enjoy our special offers!</p>
+        <a href="#" class="btn btn-light">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form container mt-5">
+      <h2 class="text-center">Check Availability</h2>
+      <form class="form-inline justify-content-center">
+        <div class="form-group mx-2">
+          <label for="check-in">Check-In</label>
+          <input type="date" id="check-in" class="form-control" />
+        </div>
+        <div class="form-group mx-2">
+          <label for="check-out">Check-Out</label>
+          <input type="date" id="check-out" class="form-control" />
+        </div>
+        <div class="form-group mx-2">
+          <label for="guests">Guests</label>
+          <select id="guests" class="form-control">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Check Availability
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+      <p>© 2024 Luxury Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="rooms.js"></script>
+  </body>
+</html>
