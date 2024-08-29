@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Peninsula Chicago - Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="Gallery.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-3">
+      <h1>Gallery of The Peninsula Chicago</h1>
+      <p>Explore our elegant spaces, dining venues, and unique events</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="container text-center my-4">
+      <button
+        class="btn btn-outline-dark mx-2 filter-btn"
+        onclick="filterImages('all')"
+      >
+        All
+      </button>
+      <button
+        class="btn btn-outline-dark mx-2 filter-btn"
+        onclick="filterImages('dining')"
+      >
+        Dining
+      </button>
+      <button
+        class="btn btn-outline-dark mx-2 filter-btn"
+        onclick="filterImages('rooms')"
+      >
+        Rooms
+      </button>
+      <button
+        class="btn btn-outline-dark mx-2 filter-btn"
+        onclick="filterImages('events')"
+      >
+        Events
+      </button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="container">
+      <div class="row gallery-grid">
+        <!-- Dining Images -->
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/Dining1.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 1"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/Dining2.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 2"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/Dining3.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/dining4.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/Dining6.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/Dining7.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/dining5.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 3"
+          />
+        </div>
+
+        <!-- Rooms Images -->
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Rooms1.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 1"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Rooms2.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 2"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Rooms3.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Rooms4.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Rooms5.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Rooms Images.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/In-Room Dining.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 3"
+          />
+        </div>
+
+        <!-- Event Images -->
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item events">
+          <img
+            src="images/Event1.jpg"
+            class="img-fluid gallery-img"
+            alt="Event Setup 1"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item events">
+          <img
+            src="images/Event2.jpg"
+            class="img-fluid gallery-img"
+            alt="Event Setup 2"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item events">
+          <img
+            src="images/Event3.jpg"
+            class="img-fluid gallery-img"
+            alt="Event Setup 3"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item events">
+          <img
+            src="images/Event4.jpg"
+            class="img-fluid gallery-img"
+            alt="Event Setup 3"
+          />
+        </div>
+
+        <!-- Additional Images for Diversity -->
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item dining">
+          <img
+            src="images/Dining Experience.jpg"
+            class="img-fluid gallery-img"
+            alt="Dining Experience 4"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item rooms">
+          <img
+            src="images/Luxury Room.jpg"
+            class="img-fluid gallery-img"
+            alt="Luxury Room 4"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 gallery-item events">
+          <img
+            src="images/Event Setup.jpg"
+            class="img-fluid gallery-img"
+            alt="Event Setup 4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div id="caption"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Gallery.js"></script>
+  </body>
+</html>
