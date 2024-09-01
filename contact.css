@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin-top: 70px; /* Adjusted for fixed navbar */
+  line-height: 1.6;
+}
+
+.hero-section {
+  background-image: url("images/contact\ banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: 450px;
+}
+
+.contact-form-section,
+.contact-info-section,
+.maps-section,
+.business-hours-section,
+.faq-section,
+.social-media-section {
+  margin-top: 50px;
+}
+
+.contact-form-section .form-control,
+.faq-section .accordion-button {
+  border-radius: 0;
+}
+
+.social-icons i {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #0056b3;
+}
