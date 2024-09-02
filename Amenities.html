@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amenities</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="Amenities.css" rel="stylesheet" />
+    <!-- Link to your custom styles -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The Peninsula Chicago</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Updated class from ml-auto to ms-auto for Bootstrap 5 or mr-auto for Bootstrap 4 -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Dining.html">Dining</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Amenities.html">Amenities</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header
+      class="header-section text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div class="overlay"></div>
+      <div class="header-content">
+        <h1 class="display-3">Explore Our Amenities</h1>
+        <p class="lead">
+          Indulge in a world of luxury and comfort with our exclusive amenities
+          designed for an exceptional experience.
+        </p>
+        <a href="#amenities" class="btn btn-primary btn-lg mt-4"
+          >Discover More</a
+        >
+      </div>
+    </header>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities-section py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Our Amenities</h2>
+        <div class="row">
+          <!-- Amenity 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="amenity-card">
+              <img
+                src="images/Infinity Swimming Pool.jpg"
+                class="img-fluid rounded"
+                alt="Swimming Pool"
+              />
+              <div class="card-content">
+                <h5>Infinity Swimming Pool</h5>
+                <p>
+                  Relax and unwind in our state-of-the-art infinity pool
+                  overlooking breathtaking views.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Amenity 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="amenity-card">
+              <img
+                src="images/Luxury Spa.jpg"
+                class="img-fluid rounded"
+                alt="Spa"
+              />
+              <div class="card-content">
+                <h5>Luxury Spa</h5>
+                <p>
+                  Pamper yourself with our range of spa treatments and massages
+                  designed for ultimate relaxation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Amenity 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="amenity-card">
+              <img
+                src="images/Fully-Equipped Gym1.jpg"
+                class="img-fluid rounded"
+                alt="Gym"
+              />
+              <div class="card-content">
+                <h5>Fully-Equipped Gym</h5>
+                <p>
+                  Stay fit and healthy with our modern gym facilities, featuring
+                  the latest equipment and trainers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Amenities Section -->
+    <section class="featured-amenities-section py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="images/Fine Dining Experience.jpg"
+              class="img-fluid rounded mb-4 mb-lg-0"
+              alt="Fine Dining"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="mb-4">Fine Dining Experience</h2>
+            <p>
+              Our on-site restaurant offers a diverse menu crafted by renowned
+              chefs, perfect for a fine dining experience or casual meals with
+              friends and family.
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section py-5 text-center text-white">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2 class="display-4">Experience Luxury Like Never Before</h2>
+        <p class="lead">
+          Contact us today to book your stay and explore the exceptional
+          amenities we offer.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg mt-4">Contact Us</a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Amenities.js"></script>
+    <!-- Include custom JavaScript -->
+  </body>
+</html>

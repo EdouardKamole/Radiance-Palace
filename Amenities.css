@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.navbar-nav {
+  margin-left: 0; /* Reset any default margin */
+  padding-left: 0; /* Reset any default padding */
+}
+
+.nav-item {
+  margin-right: 15px; /* Add space between menu items */
+}
+
+/* Header Section */
+.header-section {
+  height: 100vh;
+  background: url("images/Panoramic\ City\ View.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.header-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-content {
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Amenities Section */
+.amenities-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.amenity-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.amenity-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #007bff;
+}
+
+.amenity-card .card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.amenity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Featured Amenities Section */
+.featured-amenities-section {
+  padding: 80px 0;
+}
+
+.featured-amenities-section h2 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.featured-amenities-section p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background: url("images/Resort\ at\ Sunset.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.cta-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 2;
+}
