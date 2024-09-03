@@ -1,0 +1,134 @@
+/* Custom Navbar Styles */
+.navbar {
+  padding: 1rem; /* Adds some padding around the navbar */
+}
+
+.navbar-brand {
+  margin-right: auto; /* Align brand to the left */
+  font-weight: bold; /* Make the brand name bold */
+  color: #000; /* Black color for the brand */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Pushes nav items to the right */
+  display: flex; /* Ensure the nav items are in a row */
+  align-items: center; /* Center align nav items vertically */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px; /* Adds space between each nav item */
+  list-style: none; /* Removes any default list styling */
+}
+
+.nav-link {
+  color: #333; /* Default link color */
+  text-transform: uppercase; /* Uppercase links */
+  font-weight: 500; /* Slightly thicker font weight */
+  text-decoration: none; /* No underline on links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Hover color */
+}
+/* special-offers.css */
+
+/* Hero Section */
+.hero-section {
+  background: url("images/special\ banner2.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero-text p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Offers Section */
+.offers-section .carousel-item {
+  padding: 20px;
+}
+.offers-section .offer-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.offers-section .offer-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.offers-section .offer-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+.offers-section .offer-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.offers-section .offer-card .card-text {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.offers-section .offer-card .btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta-section .btn {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+.footer-section p {
+  margin: 0;
+  padding: 5px 0;
+}
+.footer-section a {
+  color: #6c757d;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}

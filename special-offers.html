@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Offers - The Peninsula Chicago</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="special-offers.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <!-- Brand on the left -->
+        <a class="navbar-brand" href="#">The Peninsula Chicago</a>
+
+        <!-- Toggler for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation items on the right -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dining.html">Dining</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html">Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="special-offers.html"
+                >Special Offers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Special Offers</h1>
+          <p>
+            Exclusive deals and offers just for you! Enjoy luxury at unbeatable
+            prices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section py-5">
+      <div class="container">
+        <div id="offersCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- Offer Item 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="offer-card">
+                    <img
+                      src="images/offer1.jpg"
+                      class="card-img-top"
+                      alt="Offer 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Luxury Suite Discount</h5>
+                      <p class="card-text">
+                        Book a luxury suite and get 20% off your stay with
+                        complimentary breakfast and spa access.
+                      </p>
+                      <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="offer-card">
+                    <img
+                      src="images/special banner.jpg"
+                      class="card-img-top"
+                      alt="Offer 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Weekend Getaway Special</h5>
+                      <p class="card-text">
+                        Enjoy a romantic weekend getaway with a special package
+                        that includes a dinner for two.
+                      </p>
+                      <a href="#" class="btn btn-primary">Explore Offer</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="offer-card">
+                    <img
+                      src="images/offer3.jpg"
+                      class="card-img-top"
+                      alt="Offer 3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Spa and Relaxation Package</h5>
+                      <p class="card-text">
+                        Relax and rejuvenate with our special spa and relaxation
+                        package at 30% off.
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel-items as needed -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#offersCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#offersCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section py-5 bg-dark text-white">
+      <div class="container text-center">
+        <h2>Don't Miss Out on Our Exclusive Offers!</h2>
+        <p>Book your stay now and enjoy luxury like never before.</p>
+        <a href="#" class="btn btn-light">View All Offers</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-light text-center text-muted py-4">
+      <div class="container">
+        <p>&copy; 2024 The Peninsula Chicago. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="special-offers.js"></script>
+  </body>
+</html>
