@@ -1,23 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let slides = document.querySelectorAll(".slide");
-    let dots = document.querySelectorAll(".dot");
-
-    slides.forEach((slide, index) => {
-      slide.style.display = "none";
-      dots[index].className = dots[index].className.replace(" active", "");
+  // Smooth scroll to sections on the page
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      if (targetId.startsWith("#")) {
+        document.querySelector(targetId).scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     });
+  });
 
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 5000); // Change slide every 5 seconds
-  }
+  // Hero section button click event
+  document
+    .querySelector(".hero-section .btn")
+    .addEventListener("click", function () {
+      alert("Explore our offerings!");
+    });
 });

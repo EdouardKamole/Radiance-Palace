@@ -3,258 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Peninsula Chicago</title>
+    <title>Dashboard - The Peninsula Chicago</title>
+
+    <!-- Bootstrap CSS -->
     <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for Icons -->
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <aside class="sidebar">
-      <div class="logo">
-        <img
-          src="images/logo.png"
-          alt="The Peninsula Chicago"
-          class="img-fluid"
-        />
-      </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#rooms" class="nav-link">Rooms</a></li>
-          <li><a href="#dining" class="nav-link">Dining</a></li>
-          <li><a href="#amenities" class="nav-link">Amenities</a></li>
-          <li><a href="#offers" class="nav-link">Special Offers</a></li>
-          <li><a href="#gallery" class="nav-link">Gallery</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="#about" class="nav-link">About Us</a></li>
+    <!-- Sidebar Navigation -->
+    <div class="d-flex">
+      <div class="sidebar bg-dark text-white p-3">
+        <h2 class="text-center">Peninsula</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">
+              <i class="fas fa-home me-2"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms.html">
+              <i class="fas fa-bed me-2"></i>Rooms
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dining.html">
+              <i class="fas fa-utensils me-2"></i>Dining
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="spa.html">
+              <i class="fas fa-spa me-2"></i>Spa
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="special-offers.html">
+              <i class="fas fa-tags me-2"></i>Special Offers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              <i class="fas fa-envelope me-2"></i>Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              <i class="fas fa-info-circle me-2"></i>About Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">
+              <i class="fas fa-images me-2"></i>Gallery
+            </a>
+          </li>
         </ul>
-      </nav>
-    </aside>
-    <main class="content" id="content">
-      <section id="home">
-        <div class="banner-slider">
-          <div class="slide fade">
-            <img
-              src="images/banner1.jpg"
-              alt="Luxury Experience"
-              class="img-fluid"
-            />
-            <div class="slide-text">
-              <h2>Luxury Redefined</h2>
-              <p>Immerse yourself in luxury at The Peninsula Chicago.</p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content flex-grow-1 p-4">
+        <!-- Top Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Logout</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="slide fade">
-            <img
-              src="images/banner3.jpg"
-              alt="Elegant Rooms"
-              class="img-fluid"
-            />
-            <div class="slide-text">
-              <h2>Elegant Rooms</h2>
-              <p>
-                Our rooms are designed for maximum comfort and sophistication.
-              </p>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-section bg-primary text-white p-5 rounded mt-4">
+          <h1>Welcome to The Peninsula Chicago Dashboard</h1>
+          <p>Your gateway to luxury experiences, personalized for you.</p>
+          <button class="btn btn-light btn-lg mt-3">Explore Now</button>
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded">
+              <div class="card-body">
+                <h5 class="card-title">Room Bookings</h5>
+                <p class="card-text">
+                  Manage and view your current room bookings.
+                </p>
+                <a href="rooms.html" class="btn btn-primary">View Rooms</a>
+              </div>
             </div>
           </div>
-          <div class="slide fade">
-            <img
-              src="images/banner4.jpg"
-              alt="Exclusive Dining"
-              class="img-fluid"
-            />
-            <div class="slide-text">
-              <h2>Exclusive Dining</h2>
-              <p>
-                Enjoy world-class dining experiences in our renowned
-                restaurants.
-              </p>
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded">
+              <div class="card-body">
+                <h5 class="card-title">Dining Reservations</h5>
+                <p class="card-text">
+                  Make dining reservations and explore our menu.
+                </p>
+                <a href="Dining.html" class="btn btn-primary">View Dining</a>
+              </div>
             </div>
           </div>
-          <div class="slider-dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded">
+              <div class="card-body">
+                <h5 class="card-title">Spa Treatments</h5>
+                <p class="card-text">Book a relaxing spa treatment with us.</p>
+                <a href="spa.html" class="btn btn-primary">View Spa</a>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      <!-- Other sections like Rooms, Dining, Amenities, etc. -->
-      <section id="rooms">
-        <h2>Our Rooms & Suites</h2>
-        <div class="room-card">
-          <img src="images/d1.jpg" alt="Deluxe Room" class="img-fluid" />
-          <div class="room-info">
-            <h3>Deluxe Room</h3>
-            <p>
-              Spacious and elegantly designed, offering the utmost comfort and
-              luxury.
-            </p>
+        <!-- Additional Features -->
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card bg-info text-white shadow-sm border-0 rounded">
+              <div class="card-body">
+                <h5 class="card-title">Special Offers</h5>
+                <p class="card-text">
+                  Check out our latest special offers and promotions.
+                </p>
+                <a href="special-offers.html" class="btn btn-outline-light"
+                  >Explore Offers</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-success text-white shadow-sm border-0 rounded">
+              <div class="card-body">
+                <h5 class="card-title">Contact Support</h5>
+                <p class="card-text">
+                  Need help? Contact our support team 24/7.
+                </p>
+                <a href="contact.html" class="btn btn-outline-light"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <div class="room-card">
-          <img src="images/d2.jpg" alt="Executive Suite" class="img-fluid" />
-          <div class="room-info">
-            <h3>Executive Suite</h3>
-            <p>
-              Experience unparalleled luxury with our expansive Executive
-              Suites.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section id="dining">
-        <h2>Dining at The Peninsula</h2>
-        <div class="restaurant-card">
-          <img
-            src="images/d3.jpg"
-            alt="Signature Restaurant"
-            class="img-fluid"
-          />
-          <div class="restaurant-info">
-            <h3>Signature Restaurant</h3>
-            <p>Indulge in exquisite dining with a range of gourmet options.</p>
-          </div>
-        </div>
-        <div class="restaurant-card">
-          <img src="images/d4.jpg" alt="Sky Bar" class="img-fluid" />
-          <div class="restaurant-info">
-            <h3>Sky Bar</h3>
-            <p>
-              Enjoy breathtaking views of the city while sipping on our
-              signature cocktails.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="amenities">
-        <h2>Amenities & Services</h2>
-        <div class="amenity-card">
-          <i class="fas fa-spa"></i>
-          <h3>Spa</h3>
-          <p>Relax and rejuvenate at our world-class spa.</p>
-        </div>
-        <div class="amenity-card">
-          <i class="fas fa-swimming-pool"></i>
-          <h3>Swimming Pool</h3>
-          <p>Take a dip in our luxurious pool with panoramic city views.</p>
-        </div>
-        <div class="amenity-card">
-          <i class="fas fa-gym"></i>
-          <h3>Fitness Center</h3>
-          <p>
-            Stay fit during your stay with our state-of-the-art fitness
-            facilities.
-          </p>
-        </div>
-      </section>
-
-      <section id="offers">
-        <h2>Special Offers</h2>
-        <div class="offer-card">
-          <h3>Romantic Getaway</h3>
-          <p>
-            Enjoy a romantic escape with our exclusive package including a
-            candlelit dinner and spa treatments.
-          </p>
-        </div>
-        <div class="offer-card">
-          <h3>Family Fun</h3>
-          <p>
-            Great deals for families, including special activities for children
-            and discounts on family suites.
-          </p>
-        </div>
-      </section>
-
-      <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <img src="gallery1.jpg" alt="Hotel Lobby" class="img-fluid" />
-          <img src="gallery2.jpg" alt="Luxury Suite" class="img-fluid" />
-          <img src="gallery3.jpg" alt="Dining Experience" class="img-fluid" />
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="/submit-form" method="post">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-control"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-        <div class="contact-info">
-          <h3>Address</h3>
-          <p>108 East Superior Street, Chicago, IL 60611</p>
-          <h3>Phone</h3>
-          <p>(312) 337-2888</p>
-          <h3>Email</h3>
-          <p>info@thepeninsulachicago.com</p>
-        </div>
-      </section>
-
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          The Peninsula Chicago offers a unique blend of luxury and comfort in
-          one of the world’s most vibrant cities. Learn more about our history,
-          mission, and what makes us exceptional.
-        </p>
-        <div class="about-vision">
-          <h3>Our Vision</h3>
-          <p>
-            To provide unparalleled luxury and exceptional service to our
-            guests.
-          </p>
-        </div>
-        <div class="about-team">
-          <h3>Meet Our Team</h3>
-          <p>
-            Our dedicated team is committed to making your stay unforgettable.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
